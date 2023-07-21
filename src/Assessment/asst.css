@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}

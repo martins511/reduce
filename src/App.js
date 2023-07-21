@@ -4,10 +4,13 @@ import Reducer from './Reducer';
 import Score from './Score';
 import Redu from './Redu';
 import Redu2 from './Redu2';
+import Otp from './generateOTP/Otp';
 import './App.css'
 import RenderProduct from './addToCart/RenderProduct';
 import { useState } from 'react';
 import RenderCart from './addToCart/RenderCart';
+import AppTask from './reducer/AppTask';
+import AppTaskTwo from './reducer/AppTaskTwo';
 const PAGE_PRODUCTS = 'products';
 const PAGE_CART = 'cart';
 function App() {
@@ -28,6 +31,8 @@ function App() {
   }
   return (
     <div className="App">
+      <AppTaskTwo/>
+      <Otp/>
       <h1 className='header'>
         <button onClick={()=>navigateTo(PAGE_CART)}>Go to Cart ({cart.length})</button>
         <button onClick={()=>navigateTo(PAGE_PRODUCTS)}>View Product</button>
